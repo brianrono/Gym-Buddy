@@ -1,10 +1,10 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 function App() {
   const [exercises, setExercises] = useState([]);
 
   useEffect(() => {
-    fetch('')
+    fetch('/exercises')
       .then((response) => response.json())
       .then((data) => setExercises(data));
   }, []);
