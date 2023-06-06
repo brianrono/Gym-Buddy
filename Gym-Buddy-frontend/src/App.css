@@ -7,9 +7,11 @@ body {
 }
 
 
-h1 {
-  text-align: start;
-  color: aqua;
+.header {
+  background-color: #1a4c7e;
+  color: white;
+  align-items: start;
+  margin: 10;
 }
 
 table {

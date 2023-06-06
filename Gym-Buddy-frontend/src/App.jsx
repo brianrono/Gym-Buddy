@@ -23,7 +23,7 @@ function App() {
       <Navbar />
       <img src='../public/darkmode.svg' alt='Dark mode icon' className={`dark-mode-icon ${darkMode ? 'dark' : 'light'}`}
         onClick={toggleDarkMode} />
-      <h1>Fitness Tracker</h1>
+      <h1 className='header'>Gym Buddy</h1>
       <table>
         <thead>
           <tr>
