@@ -22,9 +22,28 @@ th,td {
   padding: 10px;
   text-align: left;
   color: white;
-  border-bottom: 1px solid #002147;
+  border-bottom: 1px solid;
 }
 
 th {
   background-color: #0A2A5E;
+}
+
+.app.light {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.app.dark {
+  background-color: #333;
+  color: #f2f2f2;
+}
+
+.dark-mode-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }

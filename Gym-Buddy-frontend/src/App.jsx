@@ -3,17 +3,26 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 function App() {
-  const [exercises, setExercises] = useState([]);
+    const [darkMode, setDarkMode] = useState(false);
 
-  useEffect(() => {
-    fetch('api')
-      .then((response) => response.json())
-      .then((data) => setExercises(data));
-  }, []);
+    const toggleDarkMode = () => {
+      setDarkMode(!darkMode);
+    };
+  
+    useEffect(() => {
+      // Apply dark mode styles
+      if (darkMode) {
+        document.documentElement.classList.add('dark-mode');
+      } else {
+        document.documentElement.classList.remove('dark-mode');
+      }
+    }, [darkMode]);
 
   return (
-    <div>
+    <div className={`app ${darkMode ? 'dark' : 'light'}`}>
       <Navbar />
+      <img src='../public/darkmode.svg' alt='Dark mode icon' className={`dark-mode-icon ${darkMode ? 'dark' : 'light'}`}
+        onClick={toggleDarkMode} />
       <h1>Fitness Tracker</h1>
       <table>
         <thead>
@@ -23,14 +32,6 @@ function App() {
             <th>Muscle Group</th>
           </tr>
         </thead>
-        <tbody>
-          {exercises.map((exercise) => (
-            <tr key={exercise.id}>
-              <td>{exercise.name}</td>
-              <td>{exercise.duration} minutes</td>
-            </tr>
-          ))}
-        </tbody>
       </table>
       <Footer />
     </div>

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    background-color: #00f3e300;
+    background-color: #10ddcf97;
     padding: 10px;
 }
 
@@ -20,5 +20,5 @@
 
 .navbar ul li a {
     text-decoration: none;
-    color: #ffffff;
+    color: #333;
 }
