@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Trainers from './components/Trainers';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
 
 function App() {
     const [darkMode, setDarkMode] = useState(false);
@@ -20,20 +23,19 @@ function App() {
 
   return (
     <div className={`app ${darkMode ? 'dark' : 'light'}`}>
-      <Navbar />
+    <Navbar />
       <img src='../public/darkmode.svg' alt='Dark mode icon' className={`dark-mode-icon ${darkMode ? 'dark' : 'light'}`}
         onClick={toggleDarkMode} />
       <h1 className='header'>Gym Buddy</h1>
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Duration</th>
-            <th>Muscle Group</th>
-          </tr>
-        </thead>
-      </table>
+      <BrowserRouter>
+        <Switch>
+            <Route exact path='/Trainers'>
+              <Trainers />
+            </Route>
+        </Switch>
       <Footer />
+    </BrowserRouter>
+      
     </div>
   );
 }
