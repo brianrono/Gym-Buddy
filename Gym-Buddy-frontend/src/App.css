@@ -1,34 +1,24 @@
+/* App Container */
 body {
   font-family: Arial, sans-serif;
-  background-color:#1a4c7e;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
 }
 
-
-.header {
-  background-color: #1a4c7e;
-  color: white;
-  align-items: start;
-  margin: 10;
+.app {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-th,td {
-  padding: 10px;
-  text-align: left;
-  color: white;
-  border-bottom: 1px solid;
-}
-
-th {
-  background-color: #0A2A5E;
+/* Dark Mode */
+.app.dark {
+  background-color: #333;
+  color: #f2f2f2;
 }
 
 .app.light {
@@ -36,11 +26,37 @@ th {
   color: #333;
 }
 
-.app.dark {
-  background-color: #333;
-  color: #f2f2f2;
+/* Navigation */
+/* Navigation */
+nav {
+  background-color: #0A2A5E;
+  width: 100%;
 }
 
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f2f2f2;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #888;
+}
+
+/* Dark Mode Icon */
 .dark-mode-icon {
   position: fixed;
   top: 20px;
