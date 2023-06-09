@@ -17,6 +17,7 @@ This is the frontend component of the Fitness Buddy application, a fitness manag
 
     - npm start  
 The application will be accessible at http://localhost:5173
+And it will fetch data from tha backend via http://localhost:9292
 
 ## Features
 - View and manage appointments
