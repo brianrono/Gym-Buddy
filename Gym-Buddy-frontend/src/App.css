@@ -9,6 +9,10 @@ body {
   min-height: 100vh;
 }
 
+h1{
+  color: rgb(16, 48, 48);
+}
+
 .app {
   flex: 1;
   display: flex;
@@ -65,3 +69,4 @@ nav ul li a:hover {
   height: 30px;
   cursor: pointer;
 }
+
