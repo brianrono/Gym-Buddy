@@ -1,6 +1,13 @@
 .dashboard-container {
     display: flex;
+    width: 135%;
     gap: 20px;
+}
+
+.dash-header{
+    display: flex;
+    justify-content: center;
+    color
 }
 
 .dashboard-item {

@@ -6,7 +6,7 @@ function Home() {
     return (
         <>
             <div className="home-container">
-                <h1>Welcome to Your Fitness Buddy</h1>
+                <h1>Your Fitness Buddy Planner</h1>
                 <h2>Featured Trainer</h2>
                 <p>John Doe</p>
                 <p><i>Specializes in strength training and weightlifting</i>.</p>

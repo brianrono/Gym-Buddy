@@ -145,7 +145,7 @@ function Dashboard() {
 
     return (
         <div>
-        <h1>Dashboard</h1>
+        <h1 className='dash-header'>Dashboard</h1>
         <div className="dashboard-container">
             <div className="dashboard-item">
             <h3>Appointments</h3>
