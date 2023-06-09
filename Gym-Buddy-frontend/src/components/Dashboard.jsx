@@ -155,8 +155,15 @@ function Dashboard() {
                 <p>Exercises: {appointment.exercises}</p>
                 <p>Duration: {appointment.duration}</p>
                 <button onClick={() => deleteAppointment(appointment.id)}>Delete</button>
-                <button onClick={() => updateAppointment(appointment.id, { exercises: 'Updated Exercises' })}>
-                    Update
+                <button
+                    onClick={() =>
+                    updateAppointment(appointment.id, {
+                        exercises: prompt('Enter updated exercises', appointment.exercises),
+                        duration: prompt('Enter updated duration', appointment.duration),
+                    })
+                    }
+                >
+                    Edit
                 </button>
                 </div>
             ))}
@@ -169,7 +176,16 @@ function Dashboard() {
                 <p>First Name: {user.first_name}</p>
                 <p>Last Name: {user.last_name}</p>
                 <button onClick={() => deleteUser(user.id)}>Delete</button>
-                <button onClick={() => updateUser(user.id, { first_name: 'Updated First Name' })}>Edit</button>
+                <button
+                    onClick={() =>
+                    updateUser(user.id, {
+                        first_name: prompt('Enter updated first name', user.first_name),
+                        last_name: prompt('Enter updated last name', user.last_name),
+                    })
+                    }
+                >
+                    Edit
+                </button>
                 </div>
             ))}
             </div>
@@ -182,7 +198,15 @@ function Dashboard() {
                 <p>Trainer ID: {review.trainer_id}</p>
                 <p>Review: {review.review}</p>
                 <button onClick={() => deleteReview(review.id)}>Delete</button>
-                <button onClick={() => updateReview(review.id, { review: 'Updated Review' })}>Edit</button>
+                <button
+                    onClick={() =>
+                    updateReview(review.id, {
+                        review: prompt('Enter updated review', review.review),
+                    })
+                    }
+                >
+                    Edit
+                </button>
                 </div>
             ))}
             </div>
@@ -237,7 +261,7 @@ function Dashboard() {
             />
             <button onClick={addReview}>Add Review</button>
         </div>
-        <Link to="/">Go back to Home</Link>
+        <Link to="/"><i>Home</i></Link>
         </div>
     );
 }

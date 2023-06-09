@@ -45,6 +45,9 @@ const App = () => {
                 <Link to="/appointments">Appointments</Link>
               </li>
               <li>
+                <Link to="/gallery">Gallery</Link>
+              </li>
+              <li>
                 <Link to="/reviews">Reviews</Link>
               </li>
               <li>
