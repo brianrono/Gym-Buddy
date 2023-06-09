@@ -27,7 +27,6 @@ function Appointments() {
                 <p>Duration: {appointment.duration}</p>
                 <p>User: {appointment.user.name}</p>
                 <p>Trainer: {appointment.trainer.name}</p>
-                {/* Include additional appointment details here */}
             </li>
             ))}
         </ul>

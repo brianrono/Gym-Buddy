@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './ContactUs.scss'
 
 const ContactUs = () => {
     const [message, setMessage] = useState('');
@@ -23,7 +24,7 @@ const ContactUs = () => {
             <textarea
                 value={message}
                 onChange={e => setMessage(e.target.value)}
-                placeholder="Enter your message"
+                placeholder="Enter your message..."
             />
             <button type="submit">Submit</button>
             </form>
