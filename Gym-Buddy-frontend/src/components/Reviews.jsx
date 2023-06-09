@@ -29,32 +29,3 @@ function Reviews() {
 }
 
 export default Reviews;
-
-
-
-// import { useEffect, useState } from 'react';
-
-// const Reviews = () => {
-//     const [reviews, setReviews] = useState([]);
-
-//     useEffect(() => {
-//         fetch('http://localhost:9292/reviews')
-//         .then(response => response.json())
-//         .then(data => setReviews(data));
-//     }, []);
-
-//     return (
-//         <div>
-//         <h2>Reviews</h2>
-//         <ul>
-//             {reviews.map(review => (
-//             <li key={review.id}>
-//                 {review.review}
-//             </li>
-//             ))}
-//         </ul>
-//         </div>
-//     );
-// };
-
-// export default Reviews;

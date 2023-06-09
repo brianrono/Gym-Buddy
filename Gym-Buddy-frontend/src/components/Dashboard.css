@@ -7,15 +7,13 @@
 .dash-header{
     display: flex;
     justify-content: center;
-    color
+    color: rgb(41, 41, 163);
 }
 
-.dashboard-item {
-    flex: 1;
-}
 
 .dashboard-item h3 {
     margin-top: 0;
+
 }
 
 .dashboard-item p {
@@ -50,7 +48,7 @@
 }
 
 .dashboard-forms input[type="text"]::placeholder {
-    color: #999;
+    color: #fefefe;
 }
 
 .dashboard-forms input[type="text"]:focus {
