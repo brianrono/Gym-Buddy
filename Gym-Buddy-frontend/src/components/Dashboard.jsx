@@ -169,7 +169,7 @@ function Dashboard() {
                 <p>First Name: {user.first_name}</p>
                 <p>Last Name: {user.last_name}</p>
                 <button onClick={() => deleteUser(user.id)}>Delete</button>
-                <button onClick={() => updateUser(user.id, { first_name: 'Updated First Name' })}>Update</button>
+                <button onClick={() => updateUser(user.id, { first_name: 'Updated First Name' })}>Edit</button>
                 </div>
             ))}
             </div>
@@ -182,7 +182,7 @@ function Dashboard() {
                 <p>Trainer ID: {review.trainer_id}</p>
                 <p>Review: {review.review}</p>
                 <button onClick={() => deleteReview(review.id)}>Delete</button>
-                <button onClick={() => updateReview(review.id, { review: 'Updated Review' })}>Update</button>
+                <button onClick={() => updateReview(review.id, { review: 'Updated Review' })}>Edit</button>
                 </div>
             ))}
             </div>
