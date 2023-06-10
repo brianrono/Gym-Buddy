@@ -1,6 +1,7 @@
 ## Fitness Buddy Frontend
 
-This is the frontend component of the Fitness Buddy application, a fitness management system. It is built using React and communicates with the backend API to fetch and manipulate data.
+This is the frontend component of the Fitness Buddy application, a fitness management system. It is built using React and communicates with the backend API to fetch and manipulate data.  
+- Here's the backend files to this frontend app https://github.com/brianrono/phase-3-sinatra-react-project
 
 ## Setup
 
